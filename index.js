@@ -7,4 +7,10 @@ const createEmployeeRecord = function(){
            timeInEvents:[],
            timeOutEvents:[]
 
-    }}
+    }
+} 
+const createEmployeeRecords = function(employeeData) {
+    return employeeData.map(function(){
+        return createEmployeeRecord
+    })
+}
