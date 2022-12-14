@@ -14,3 +14,11 @@ const createEmployeeRecords = function(employeeData) {
         return createEmployeeRecord
     })
 }
+let createTimeInEvent = function(employee, dateStamp){
+    let [date, hour] = dateStamp.split("")
+    employee.timeInEvents.push({
+        type:"TimeIn",
+        hour:parseInt(hour,7), date
+    })
+    return employee
+}
